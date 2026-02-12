@@ -1,0 +1,811 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Squada One', cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*HEADER SECTION*/
+.container-header {
+	min-height: 50vh;
+	padding: 2rem 6rem;
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),;
+    background-image: url(../img/fondo3.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgba(0,0,0,0.5);
+	filter: brightness(0.9);
+	position: relative;
+	
+	box-sizing: border-box;
+}
+
+/* NAVBAR */
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav li {
+	font-size: 1.7em;
+	padding: 1rem;
+	color: white;
+}
+
+nav li:hover {
+  	background: #2B398E;
+	border-radius: 5px 5px 5px 5px;
+	transition: ease-in 0.4s;
+}
+
+.navbar-brand img {
+	width: 4rem;
+	height: 4rem;
+}
+
+.burguer-menu {
+	padding: 1rem;
+	display: inline-block;
+	color: white;
+   font-size: 4em;
+}
+
+.burguer-menu:hover {
+  cursor: pointer;
+/*   color: grey; */
+}
+
+#burguer-container {
+  text-align: right;
+}
+
+#menu-options {
+  	/*display: none;*/
+	text-align: right;
+	justify-content: space-between;
+	
+	max-height: 0;
+	transition: max-height 0.8s;
+	overflow: hidden;
+}
+
+#menu-options.is-active {
+  	display: block;
+	max-height: 270px;
+	transition: max-height 0.8s;
+}
+
+/* CODIGO COMENTADO PARA PRUEBAS
+.navbar {
+	padding: 1rem;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar-brand {
+	color: white;
+	font-size: 1.6em;
+	text-shadow: 2px 2px 2px #2B398E;
+}
+
+.navbar-item-list {
+	list-style: none;
+}
+
+.navbar-item {
+	color: white;
+	display: inline-block;
+	padding: 1rem 1.5rem;
+	font-size: 1.6em;
+	
+	text-shadow: 2px 2px 2px #2B398E;
+}
+*/
+
+.text-header {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10%;
+}
+
+.text-title {
+	padding: 2rem;
+	align-self: center;
+	border: solid 3px;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 2px 2px 1px 1px #2B398E;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.text-title h1 {
+	font-size: 5em;
+	text-shadow: 2px 2px 2px #2B398E;
+}
+
+.text-title p {
+	font-size: 2.5em;
+	text-shadow: 2px 2px 2px #2B398E;
+	text-align: center;
+}
+
+.text-title a {
+	color: white;
+	font-size: 1.5em;
+	text-shadow: 2px 2px 2px #2B398E;
+	text-decoration: none;
+	align-self: center;
+}
+
+.btn {
+	background: #2B398F;
+	padding: 1rem;
+	margin-top: 20px;
+	
+	border: solid 3px;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 2px 2px 1px 1px #2B398E;
+}
+
+.btn:hover {
+	background: #3e51c3;
+	transition: ease-in 0.4s;
+}
+
+/*ABOUT ME SECTION*/
+.about-me {
+	text-align: center;
+	overflow: visible;
+	position: relative;
+}
+
+.profile-container {
+	/*overflow: visible;*/
+	width: 90%;
+	margin: auto;
+}
+
+.profile-photo {
+	margin-top: -40px;
+}
+
+.profile-photo img {
+	border-radius: 40%;
+	border: 3px solid rgba(255, 255, 255);
+}
+
+.profile-container h3 {
+	margin: 50px;
+	font-size: 2.2em;
+	text-shadow: 2px 2px 2px #E3EFF7;
+}
+
+.profile-container p {
+	margin: 20px;
+	font-size: 1.7em;
+	color: #455A64;
+}
+
+
+/*SKILL SECTION*/
+.skills {
+	margin-top: 50px;
+	padding-bottom: 100px;
+	background: #455A64;
+}
+
+.skills-container {
+	text-align: center;
+	width: 85%;
+	margin: auto;
+}
+
+.skills-container p {
+	color: white;
+	font-size: 1.3em;
+	margin-bottom: 50px;
+}
+
+.skills-container h3 {
+	color: white;
+	padding: 50px;
+	font-size: 2.2em;
+	text-shadow: 2px 2px 2px #5F6263;
+}
+
+.row h4 {
+	color: black;
+	padding: 20px;
+	font-size: 1.5em;
+	text-shadow: 2px 2px 2px #E3EFF7;
+}
+
+.row p {
+	color: #455A64;
+	padding: 10px;
+	font-size: 1.3em;
+}
+
+.skills-card {
+	background: #f0f0f0;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0 0 0.7em black;
+}
+
+.skills-card ul {
+	list-style: none;
+	text-align: left;
+	padding-left: 4rem;
+}
+
+.tech-icons {
+	list-style: none;
+	text-align: center !important;
+	padding-left: 4rem;
+}
+
+.skills-card li {
+	padding: 0.8rem;
+	font-size: 1.2em;
+}
+
+/*JOBS SECTION*/
+.jobs {
+	/*position: relative;*/
+	margin-bottom: 100px;
+}
+
+.jobs-container {
+	text-align: center;
+	width: 85%;
+	margin: auto;
+}
+
+.jobs-container h3 {
+	margin: 50px;
+	font-size: 2.2rem;
+	text-shadow: 2px 2px 2px #E3EFF7;
+	text-align: center;
+}
+
+.jobs-container p {
+	color: #455A64;
+	font-size: 3rem;
+	margin-bottom: 50px;
+}
+
+.card-job {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-color: grey;
+	border-radius: 0 0 10px 10px;
+	box-shadow: 0 0 1em grey;
+	box-sizing: border-box;
+}
+
+.card-img-job img {
+	width: 100%;
+	border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;	
+}
+
+.card-body p {
+	font-size: 1.5em;
+}
+
+.card-btn {
+	background: #2B398F;
+	padding: 0.5rem;
+	font-size: 3em;
+	
+	border: solid 3px;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 2px 2px 1px 1px #2B398E;
+}
+
+.card-btn:hover {
+	background: #3e51c3;
+	transition: ease-in 0.4s;
+}
+
+.card-body a {
+	color: white;
+	font-size: 2rem;
+	text-shadow: 2px 2px 2px #2B398E;
+	text-decoration: none;
+	align-self: center;
+	
+	margin-bottom: 30px;
+}
+
+/*CONTACT ME*/
+.contact-me {
+	background: #455A64;
+	padding: 50px;
+	margin-top: 50px;
+}
+
+.contact-me-p {
+	text-align: center;
+	width: 75%;
+	margin: auto;
+}
+
+.card-contact-me {
+	background: #293347;
+	margin-top: -80px;
+	padding: 3rem;
+	
+	border-radius: 10px;
+	box-shadow: 0 0 1em black;
+}
+
+.card-start-proyect {
+	font-size: 2.5rem !important;
+	color: white !important;
+}
+
+.card-start-proyect-1 {
+	font-size: 1.5rem !important;
+	color: white !important;
+}
+
+.mg-bt {
+	margin-bottom: 20px;
+}
+
+.card-contact-btn {
+	margin-top: 5rem;
+	border: solid 2px white;
+	border-radius: 15px 15px 15px 15px;
+	padding: 8px;
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
+}
+
+.card-contact-btn:hover {
+	cursor: pointer;
+	background: #2B398F;
+	transition: ease-in 0.4s;
+}
+
+/*SOCIAL NETWORKS*/
+.social-networks-container {
+	margin-top: 50px;
+}
+
+.networks-icons {
+	margin: auto;
+	width: 50%;
+}
+
+.network-icons ul {
+	list-style: none;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.network-icons li {
+	padding: 40px;
+}
+
+.icon a{
+	text-decoration: none;
+	font-size: 3rem;
+	color: white;
+}
+
+.linkedin:hover {
+	color: #0077B5;
+	transition: ease 0.3s;
+}
+
+.twitter:hover {
+	color: #1DA1F2;
+	transition: ease 0.3s;
+}
+
+.github:hover {
+	color: #181616;
+	transition: ease 0.3s;
+}
+
+/*CREDITS*/
+.credits {
+	margin: 10px;
+}
+
+.credits p {
+	text-align: center;
+	font-size: 1.5rem;
+	color: white;
+}
+/* Helpers */
+.row {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	/*box-shadow: 2px 2px 2px 2px #2F3031;*/
+	border-radius: 10px 10px 10px 10px;
+}
+.column {
+	padding: 1rem;
+}
+
+.column-separator {
+	border-right: solid 5px #E3EFF7;
+}
+
+.col-6 {
+	width: 100%;
+	box-sizing: border-box; 
+}
+
+.col-4 {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.separator {
+	margin-top: 50px;
+	border: solid 2px #E3EFF7;
+	width: 30%;
+	margin: auto;
+}
+
+/*MEDIA QUERIES*/
+
+/* PHONE */
+@media (min-width: 576px) {
+	
+	#menu-options ul {
+		font-size: 2em;
+	}
+	
+	.navbar-brand img {
+		width: 6rem;
+		height: 6rem;
+	}
+	
+	.col-6 {
+		width: 100%;
+		box-sizing: border-box; 
+	}
+	
+	.col-4 {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+	.card-body h4 {
+		font-size: 3em;
+	}
+	
+	.jobs-container p {
+		font-size: 3em !important;
+	}
+	
+	.card-btn p {
+		font-size: 5em;
+	}
+	
+	.card-btn {
+		font-size: 4em !important;
+	}
+	
+	.profile-container h3 {
+		font-size: 4em;
+	}
+
+	.profile-container p {
+		font-size: 3em;
+	}
+	
+	.skills-container p {
+		font-size: 3em;
+	}
+
+	.skills-container h3 {
+		font-size: 4em;
+	}
+	
+	.row h4 {
+		font-size: 4em;
+	}
+
+	.row p {
+		font-size: 3em;
+	}
+	
+	.skills-card li {
+		font-size: 2.8em;
+	}
+	
+	.jobs-container h3 {
+		font-size: 4em;
+	}
+	
+	.card-start-proyect {
+		font-size: 4em !important;
+	}
+
+	.card-start-proyect-1 {
+		font-size: 3em !important;
+	}
+	
+	.card-contact-btn {
+		font-size: 3em;
+	}
+	
+	.text-title h1 {
+		font-size: 7em;
+		text-align: center;
+	}
+
+	.text-title p {
+		font-size: 4.5em;
+		text-align: center;
+	}
+	
+	.text-title a {
+		font-size: 3.5em;
+	}
+}
+
+/* TABLETS */
+@media (min-width: 768px) {
+	
+	#menu-options ul {
+		font-size: 2em;
+	}
+	
+	.navbar-brand img {
+		width: 6rem;
+		height: 6rem;
+	}
+	
+	.col-6 {
+		width: 100%;
+		box-sizing: border-box; 
+	}
+	
+	.col-4 {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+	.card-body h4 {
+		font-size: 3em;
+	}
+	
+	.card-btn p {
+		font-size: 5em;
+	}
+	
+	.jobs-container p {
+		font-size: 3em !important;
+	}
+	
+	.card-btn {
+		font-size: 4em !important;
+	}
+	
+	.profile-container h3 {
+		font-size: 4em;
+	}
+
+	.profile-container p {
+		font-size: 3em;
+	}
+	
+	.skills-container p {
+		font-size: 3em;
+	}
+
+	.skills-container h3 {
+		font-size: 4em;
+	}
+	
+	.row h4 {
+		font-size: 4em;
+	}
+
+	.row p {
+		font-size: 3em;
+	}
+	
+	.skills-card li {
+		font-size: 2.8em;
+	}
+	
+	.jobs-container h3 {
+		font-size: 4em;
+	}
+	
+	.card-start-proyect {
+		font-size: 4em !important;
+	}
+
+	.card-start-proyect-1 {
+		font-size: 3em !important;
+	}
+	
+	.card-contact-btn {
+		font-size: 3em;
+	}
+	
+	.text-title h1 {
+		font-size: 7em;
+		text-align: center;
+	}
+
+	.text-title p {
+		font-size: 4.5em;
+		text-align: center;
+	}
+	
+	.text-title a {
+		font-size: 3.5em;
+	}
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+	
+	#burguer-container {
+   	display: none;
+  	}
+	
+  	#menu-options {
+   	display: flex;
+		overflow: visible;
+  	}
+	
+	#menu-options ul {
+		font-size: 1.2em;
+	}
+	
+  	nav li {
+   	display: inline-block;
+  	}
+	
+	.navbar-brand img {
+		width: 4rem;
+		height: 4rem;
+	}
+	
+	.col-6 {
+		width: 50%;
+		box-sizing: border-box; 
+	}
+	
+	.col-4 {
+		width: 33%;
+		box-sizing: border-box;
+	}
+	
+	.card-body h4 {
+		font-size: 3em;
+	}
+	
+	.card-btn p {
+		font-size: 5em;
+	}
+	
+	.jobs-container p {
+		font-size: 1.5em !important;
+	}
+	
+	.card-btn {
+		font-size: 1.8em !important;
+	}
+	
+	.profile-container h3 {
+		font-size: 2.2em;
+	}
+
+	.profile-container p {
+		font-size: 1.7em;
+	}
+	
+	.skills-container p {
+		font-size: 1.3em;
+	}
+
+	.skills-container h3 {
+		font-size: 2.2em;
+	}
+	
+	.row h4 {
+		font-size: 1.5em;
+	}
+
+	.row p {
+		font-size: 1.3em;
+	}
+	
+	.skills-card li {
+		font-size: 1.2em;
+	}
+	
+	.jobs-container h3 {
+		font-size: 4em;
+	}
+	
+	.card-start-proyect {
+		font-size: 2.5em !important;
+	}
+
+	.card-start-proyect-1 {
+		font-size: 1.5em !important;
+	}
+	
+	.card-contact-btn {
+		font-size: 1.5em;
+	}
+	
+	.text-title h1 {
+		font-size: 5em;
+		text-align: center;
+	}
+
+	.text-title p {
+		font-size: 2.5em;
+		text-align: center;
+	}
+	
+	.text-title a {
+		font-size: 1.5em;
+	}
+}
+
+.contact-container {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.contact-buttons {
+    margin-top: 20px;
+}
+
+.contact-buttons .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-buttons .btn:hover {
+    background: #764ba2;
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Fundamentos de HTML-CSS - Módulo 6: CSS - Maquetación Web">
+        <meta name="keywords" content="html, css, javascript">
+        <meta name="author" content="Ahsly Valentina Manosalba">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <title>MOD 8 Portafolio</title>
+        <link rel="stylesheet" href="css/estilo.css">        
+    </head> 
+    <body>
+         <div class="container-header">
+	
+	<nav>
+		<div class="navbar-brand">
+			<img src="img/cat1.jpg" height="54" alt="logo"/>
+		</div>
+		<div class="navbar-menu">
+			<div id="burguer-container">
+				<span onclick="openMenu()" class="burguer-menu">
+				  <i class="fas fa-bars"></i>
+				</span>
+			</div>
+			
+			<div id="menu-options">
+				<ul>
+					<li>
+						<a id="1" onclick="goToSection(this)">Acerca de mí</a>
+					</li>
+					<li>
+						<a id="2" onclick="goToSection(this)">Habilidades</a>
+					</li>
+					<li>
+						<a id="3" onclick="goToSection(this)">Trabajos</a>
+					</li>
+					<li>
+						<a id="4" onclick="goToSection(this)">Contacto</a>
+					</li>					
+				</ul>
+			</div>
+		</div>
+  </nav>
+	
+	<!-- CODIGO COMENTADO PARA PRUEBAS
+	<div class="navbar">
+		<div class="navbar-brand">
+			<img src="https://img.icons8.com/color/48/000000/whale.png" height="54" alt="logo"/>WebDev
+		</div>
+		<div id="menu-items">
+			<ul class="navbar-item-list">
+				<li class="navbar-item">Acerca de</li>
+				<li class="navbar-item">Skills</li>
+				<li class="navbar-item">Trabajos</li>
+				<li class="navbar-item">Contactame</li>
+			</ul>
+		</div>
+		<div id="burguer-container">
+			<span class="burguer-menu" onclick="openMenu()">
+				<li class="fas fa-bars"></li>
+			</span>
+		</div>
+	</div>
+	-->
+	
+	<div data-aos="fade-up" class="text-header">
+		<div class="text-title">
+			<h1>Hola, Soy Ahsly!</h1>
+			<p>Web development</p>
+			<a id="1" onclick="goToSection(this)" class="btn">Conoceme</a>
+		</div>
+	</div>
+	
+</div>
+
+	<section class="about-me" id="1-section">
+		<div data-aos="fade-up" class="profile-container">
+			<div class="profile-photo">
+				<img src="img/Ahsly.jpg" alt="" width="250" height="250">
+			</div>
+			<h3 data-aos="fade-up">Acerca de mi</h3>
+			<p data-aos="fade-up">
+				Mi nombre es Ahsly Manosalba y soy <strong>desarrolladora web </strong>.Me estoy aventurando en el mundo del desarrollo web. Ya he realizado algunos proyectos en tecnologias como <strong>Java</strong>
+			</p>
+			<img data-aos="fade-up" src="img/javalogo.png">
+		</div>
+	</section>
+
+<div class="separator"></div>
+
+<section class="skills" id="2-section">
+	<div class="skills-container">
+		<h3 data-aos="fade-up">Habilidades</h3>
+		<p data-aos="fade-up">
+			En esta seccion, encontraras todas mis <strong>HABILIDADES</strong>, en cuanto a herramientas para gestion de proyectos, herramienta de desarrollo de software y habilidades personales, que hacen de mi un gran profesional.
+		</p>
+		<div data-aos="fade-up" class="row skills-card">
+			<div data-aos="fade-up" class="column col-6 column-separator">
+				<h4>
+					Personales
+				</h4>
+				<p>
+					Estas son mis <strong>caracteristicas personales</strong>, que hacen parte de mi ser, como profesional y que complementan mi roll tecnico.
+				</p>
+				<ul>
+					<li>
+						Pensamiento agil y facilidad para el aprendizaje de conceptos tecnicos.
+					</li>
+					<li>
+						Compromiso y alto nivel de responsabilidad, con los proyectos a los que me encuentro asignado.
+					</li>
+					<li>
+						Integridad y etica profesional.
+					</li>
+					<li>
+						Alto nivel de autonomia, entendimiento y alcance de manera exitosa de los objetivos planteados.
+					</li>
+				</ul>
+			</div>
+			<div data-aos="fade-up" class="column col-6">
+				<h4>
+					Tecnicas
+				</h4>
+				<p>
+					Estas son mis <strong>habilidades tecnicas</strong> & <strong>herramientas</strong>, que constantemente estoy fortaleciendo y que en cada proyecto que emprendo, las aplico al maximo!
+				</p>
+				<ul data-aos="fade-up" class="tech-icons">
+					<li>
+						<img src="https://img.icons8.com/color/96/000000/html-5.png">
+						<img src="https://img.icons8.com/color/96/000000/css3.png">
+						<img src="https://img.icons8.com/color/96/000000/javascript.png">
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="separator" style="margin-top: 50px"></div>
+
+<section class="jobs" id="3-section">
+	<div class="jobs-container">
+		<h3 data-aos="fade-up">Mis trabajos</h3>
+		<p data-aos="fade-up">
+			Mira algunos de mis trabajos, te los presento 📝
+		</p>
+		<div>
+			<div data-aos="fade-up" class="row">
+				
+				<div class="column col-4">
+					
+					<div class="card-job">
+						
+						<div class="card-img-job">
+							<img src="img/trabajo1.png" alt="">
+						</div>
+						<div data-aos="fade-up" class="card-body">
+							<h4>TCBUEN</h4>
+							<p>
+								HTML5 - CSS3 - JavaScript - PHP - WordPress
+							</p>
+							<a href="C:/Users/Sena%20CSET/Documents/Ahsly%20Valentina%20Manosalba%20MOD%204/Index.HTML" target="_blank" class="card-btn">Conocer</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<div class="column col-4">
+					
+					<div class="card-job">
+						
+						<div class="card-img-job">
+							<img src="img/trabajo2.png" alt="">
+						</div>
+						<div data-aos="fade-up" class="card-body">
+							<h4>CORPBUNTUR</h4>
+							<p>
+								HTML5 - CSS3 - JavaScript - NodeJS - MDBootstrap
+							</p>
+							<a href="https://github.com/k4dm3l/BuenaventuraTuristica" target="_blank" class="card-btn">Conocer</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<div class="column col-4">
+					
+					<div class="card-job">
+						
+						<div class="card-img-job">
+							<img src="img/trabajo3.png" alt="">
+						</div>
+						<div data-aos="fade-up" class="card-body">
+							<h4>Carnivoros</h4>
+							<p>
+								JavaSE - MySQL (Sistema Caja Registradora)
+							</p>
+							<a href="https://github.com/k4dm3l/WorkIt-Java" target="_blank" class="card-btn">Conocer</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="contact-me" id="4-section">
+    
+    <div class="contact-container">
+        <h3>Contacto</h3>
+        <p>¿Quieres trabajar conmigo? ¡Escríbeme!</p>
+
+        <div class="contact-info">
+            <p><strong>Nombre:</strong> Ahsly Valentina Manosalba</p>
+            <p><strong>Email:</strong> ahslyvalentinamanosalvabeltran@gmail.com</p>
+        <p><strong>Teléfono:</strong> +57 3153767043</p>
+            <p><strong>Ciudad:</strong> Colombia</p>
+        </div>
+
+        <div class="contact-buttons">
+            <a href="mailto:ahsly@email.com" class="btn">Enviar Correo</a>
+        </div>
+    </div>
+
+    <div class="credits">
+        <p>© 2026 Ahsly Valentina Manosalba - Todos los derechos reservados.</p>
+    </div>
+
+</section>
+	
+	<div data-aos="fade-up" class="social-networks-container">
+		<div class="network-icons">
+			<ul class="list-networks">
+				<li class="icon">
+
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="credits">
+			<p>
+				<script type="text/javascript">
+					copyright=new Date();
+					update=copyright.getFullYear();
+					document.write("Sitio Hecho a Mano - © "+update);
+				</script>
+			</p>
+		</div>
+	</div>
+</section>
+            <p>© 2026 [Tu Nombre]. Todos los derechos reservados.</p> 
+    <script src="js/mod27.js"></script>
+    </body>
+</html>
